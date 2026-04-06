@@ -106,7 +106,7 @@ class Transformable:
                     break
             # self.name isn't set so try setting name to id
             if self.name == '':
-                self.name == self.id
+                self.name = self.id
 
             # set fill_even_odd if property set
             self.fill_even_odd = elt.get("fill-rule", '').lower() == 'evenodd'
